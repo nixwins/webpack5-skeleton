@@ -1,0 +1,28 @@
+$main-color :rgb(99, 223, 140);
+
+
+h1{
+    color: $main-color;
+    // display:gird;
+    background-color:mix-color(rgb(0% 42.35% 33.33%) rgb(41.2% 69.88% 96.64%));
+    ::placeholder {
+        color: gray;
+      }
+      
+     
+}
+
+@media screen and (max-width:320px) {
+    h1{
+        font-size:20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+  h1{
+      color:red;
+  }
+}
+
+
+
