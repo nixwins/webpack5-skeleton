@@ -1,4 +1,7 @@
-import  './css/app.css';
-import './scss/main.scss'
+import VanillaSlider from './js/vanilla-slider';
+import './scss/main.scss';
 
-console.log("Hello webpack")
+
+new VanillaSlider("slider", {slideClass:"some"});
+
+

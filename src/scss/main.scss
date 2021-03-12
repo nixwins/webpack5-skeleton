@@ -1,28 +1,21 @@
-$main-color :rgb(99, 223, 140);
+@import 'vars';
 
+.slider{
+    width:$slider-width;
+    height: $slider-height;
 
-h1{
-    color: $main-color;
-    // display:gird;
-    background-color:mix-color(rgb(0% 42.35% 33.33%) rgb(41.2% 69.88% 96.64%));
-    ::placeholder {
-        color: gray;
-      }
-      
-     
-}
+    .slide{
+        display:none;
+        width:100%;
+        
+        img{
+            width:100%;
+            object-fit: cover;
+        }
+    }
 
-@media screen and (max-width:320px) {
-    h1{
-        font-size:20px;
+    .active-slide{
+        display: flex;
+        color:$main-color;
     }
 }
-
-@media screen and (max-width:320px) {
-  h1{
-      color:red;
-  }
-}
-
-
-

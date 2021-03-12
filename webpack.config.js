@@ -22,14 +22,23 @@ const conf =  {
         path: path.resolve(__dirname, './dist/'),
         filename:`${PATHS.jsDir}/[name].js`,
         clean:true,
-        publicPath:'/'
+        publicPath:'/',
+        
     },
 
+    // target: process.env.NODE_ENV === "development" ? "web" : "browserslist",
     devServer: {
+      
+        historyApiFallback: true,
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 8080,
         overlay:true,
+        // hot:true,
+        // watchOptions: {
+        //     poll: true,
+        //     ignored: '/node_modules/',
+        //   },
      
       },
 
