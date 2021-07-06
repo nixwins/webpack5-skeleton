@@ -1,7 +1,5 @@
-import VanillaSlider from './js/vanilla-slider';
 import './scss/main.scss';
+import { BurgerMenu, CustomSelect as AdminNav } from './js/app';
 
-
-new VanillaSlider("slider", {slideClass:"some"});
-
-
+BurgerMenu();
+AdminNav();
